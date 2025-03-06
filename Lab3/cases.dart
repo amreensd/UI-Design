@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:class_object/switchdemo.dart';
+import 'package:class_object/cases.dart';
 
 void main(List<String> arguments) {
-	switchdemo sd = switchdemo();
+	cases sd = cases();
 	String fruit = stdin.readLineSync()!;
-	sd.sdemo(fruit);
+	sd.scase(fruit);
      
  }
