@@ -1,9 +1,24 @@
-import 'dart:io';
-import 'package:class_object/switchdemo.dart';
+class  switchdemo{
+  void sdemo(String fruit) {
+ switch (fruit){
+   case 'Apple' || 'apple':
+           print("it is a fruit");
+	   
+    case 'Mango'|| 'mango':
+           print("it is a fruit");
+	   
 
-void main(List<String> arguments) {
-	switchdemo sd = switchdemo();
-	String fruit = stdin.readLineSync()!;
-	sd.sdemo(fruit);
-     
- }
+    case 'Grapes' || 'grapes':
+           print("it is a fruit");
+	   
+
+   case 'Watermelon' || 'watermelon ':
+           print("it is a fruit");
+	   
+  default:	
+	   print("Sorry fruit is not listed");
+           
+
+    }
+  }
+}
