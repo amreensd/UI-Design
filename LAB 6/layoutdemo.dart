@@ -19,35 +19,58 @@ class MyApp extends StatelessWidget{
               width: 500,
               child: GridView.count(
                   crossAxisCount: 2,
+
                 children: [
-                  Column(
-                    children: [
-                      Icon(Icons.add_alert),
-                      Icon(Icons.access_alarm_rounded),
-                      Icon(Icons.accessible_forward),
-                    ],
+                  Container(
+                    color : Colors.teal,
+                    child:Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.add_alert),
+                        Icon(Icons.access_alarm_rounded),
+                        Icon(Icons.accessible_forward),
+                      ],
+                    ),
                   ),
 
-                  Row(
+              Container(
+                color : Colors.teal,
+                child:Row(
                     children: [
                       Icon(Icons.account_balance_outlined),
                       Icon(Icons.accessibility),
                       Icon(Icons.account_balance_wallet_sharp),
                     ],
                   ),
-                  Stack(
+              ),
+              Container(
+                color : Colors.orange,
+                child:Stack(
                     children: [
-                      Icon(Icons.add_alert),
-                      Icon(Icons.access_alarm_rounded),
-                      Icon(Icons.accessible_forward),
+                      Container(
+                        height: 80,
+                        width : 80,
+                        color: Colors.blue,
+                      ),
+                      Container(
+                        height: 60,
+                        width : 60,
+                        color: Colors.blue[300],
+                      ),
+                      Container(
+                        height: 40,
+                        width : 40,
+                        color: Colors.blue[200],
+                      ),
 
                     ]
-                  )
+                  ),
+              ),
                 ],
               ),
             ),
       ),
-    
+
       ),
     );
   }
