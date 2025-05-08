@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget{
                   ),
 
               Container(
-                color : Colors.teal,
+                color : Colors.purple,
                 child:Row(
                     children: [
                       Icon(Icons.account_balance_outlined),
